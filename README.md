@@ -61,40 +61,40 @@ For instructions on assembly, look here: https://www.youtube.com/watch?v=1PfsVjn
 - Take 4 1/8 heat shrink tubes and cut them in half, so you have 8.
 - Take 4 1/4 heat shrink tubes and cut them in half, so you have 8.
 - Take 4 3/8 heat shrink tubes and cut them in half, so you have 8.
-11. Insert a 1/8 heat shink tubing over the black wire, push all the way to the end.
-12. Insert a 1/4" heat shrink tube and push it over the red and black wires, pushing it all the way to the end.
-13. Use the heat gun to shrink it.
-14. Slide 3/8 heat shrink tube over the 1/4" head shield and the motor.
-15. Use the head gun on this.
-16. Repeat for all fingers.
+- Insert a 1/8 heat shink tubing over the black wire, push all the way to the end.
+- Insert a 1/4" heat shrink tube and push it over the red and black wires, pushing it all the way to the end.
+- Use the heat gun to shrink it.
+- Slide 3/8 heat shrink tube over the 1/4" head shield and the motor.
+- Use the head gun on this.
+- Repeat for all fingers.
 
 ### Install Arduino Software
-17. Install Arduino IDE
-18. Plug in Arduino
-19. Install Adafruit Motor Shield Library
-20. Upload the sketch
+- Install Arduino IDE
+- Plug in Arduino
+- Install Adafruit Motor Shield Library
+- Upload the sketch
 
 ### Attach Vibrating Motors to Arduino Motor Shield
-21. Attach 2 motors into each "slot" in the Arduino Motor Shield. This is because "Motor 1" slot in the motor shield is sending a pattern for "finger 1 on each hand". So 2 blacks and 2 reds in motor 1 and 2 blacks and 2 reds in motor 2, and same for motor 3 and motor 4.
-22. Tighten the motor shield screws to ensure the motors are held firmly in place.
+- Attach 2 motors into each "slot" in the Arduino Motor Shield. This is because "Motor 1" slot in the motor shield is sending a pattern for "finger 1 on each hand". So 2 blacks and 2 reds in motor 1 and 2 blacks and 2 reds in motor 2, and same for motor 3 and motor 4.
+- Tighten the motor shield screws to ensure the motors are held firmly in place.
 
 ### Assemble Lapboard
-23. Place laboard on table, and put wrist guard on end.
-24. Have the user place their fingers on the board, and mark each spot.
-25. Label the fingers as 1, 2, 3, 4, with 1 being the index finger and 4 being the pinky finger.
-26. Place decorating stickers on each spot. 
-27. Add the central controller (Arduino) to the top-center of the board, securing it with 2 sided velcro.
-28. Put the correct vibrating motor to each number. For example, the 2 motors coming from the M1 slot on the Arduino Motor Board go to the 1 finger slot. 
-29. Add cable tie to secure the motor in place.
+- Place laboard on table, and put wrist guard on end.
+- Have the user place their fingers on the board, and mark each spot.
+- Label the fingers as 1, 2, 3, 4, with 1 being the index finger and 4 being the pinky finger.
+- Place decorating stickers on each spot. 
+- Add the central controller (Arduino) to the top-center of the board, securing it with 2 sided velcro.
+- Put the correct vibrating motor to each number. For example, the 2 motors coming from the M1 slot on the Arduino Motor Board go to the 1 finger slot. 
+- Add cable tie to secure the motor in place.
 
 ### Final Power Assembly
-30. Put the motor shield and arduino power cables into a Y-splitter, so they have 1 usb powering both.
-31. Put that usb power into a switch.
-32. Plug the switch into your battery pack.
+- Put the motor shield and arduino power cables into a Y-splitter, so they have 1 usb powering both.
+- Put that usb power into a switch.
+- Plug the switch into your battery pack.
 
 ### Turn It On and Check It
-33. Turn it on, and check to see if the light inside is flashing.
-34. It should work in a pattern, with each finger vibrating. This video shows how it should work and sound: https://www.youtube.com/shorts/loSCJDZAPkg
+- Turn it on, and check to see if the light inside is flashing.
+- It should work in a pattern, with each finger vibrating. This video shows how it should work and sound: https://www.youtube.com/shorts/loSCJDZAPkg
 
 
 
