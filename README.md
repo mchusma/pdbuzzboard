@@ -46,21 +46,21 @@ Working with parts like these, note that they will fail much more often than you
 For instructions on assembly, look here: https://www.youtube.com/watch?v=1PfsVjnPAuQ&t=1456s
 
 ### Prepare Central Board
-1. Take your Arduino Uno and attach the Motor Shield to the top of the Arduino. Line up the motor shield to the end of the board.
-2. Put your Arduino and Motor Shield into a case.
-3. Remove the jumper from the Motor Shield.
-3. Connect USB power source to Motor Shield.
-4. Connect USB power source to Arduino.
+- Take your Arduino Uno and attach the Motor Shield to the top of the Arduino. Line up the motor shield to the end of the board.
+- Put your Arduino and Motor Shield into a case.
+- Remove the jumper from the Motor Shield.
+- Connect USB power source to Motor Shield.
+- Connect USB power source to Arduino.
 
 ### Prepare Vibrating Motors
-5. Cut 16 wires total to length. 8 black wires and 8 red wires.
-6. Strip the ends of the wires.
-7. Solder the wires to the vibrating motors. Match the red wire from the motor to the red wire, and match the black wire from the motor to the black wire.
+- Cut 16 wires total to length. 8 black wires and 8 red wires.
+- Strip the ends of the wires.
+- Solder the wires to the vibrating motors. Match the red wire from the motor to the red wire, and match the black wire from the motor to the black wire.
 
 ### Cover Vibrating Motors With Protective Covers
-8. Take 4 1/8 heat shrink tubes and cut them in half, so you have 8.
-9. Take 4 1/4 heat shrink tubes and cut them in half, so you have 8.
-10. Take 4 3/8 heat shrink tubes and cut them in half, so you have 8.
+- Take 4 1/8 heat shrink tubes and cut them in half, so you have 8.
+- Take 4 1/4 heat shrink tubes and cut them in half, so you have 8.
+- Take 4 3/8 heat shrink tubes and cut them in half, so you have 8.
 11. Insert a 1/8 heat shink tubing over the black wire, push all the way to the end.
 12. Insert a 1/4" heat shrink tube and push it over the red and black wires, pushing it all the way to the end.
 13. Use the heat gun to shrink it.
