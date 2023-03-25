@@ -13,14 +13,16 @@ The PD Buzzboard project has a few variations:
 This project will typically take a few hours to build the first time, if you have all the parts and supplies
 
 ## Parts & Equipment
-**Equipment**
+### Equipment
+
 This is equipment you must have:
 - Soldering Iron - Any one should do, but getting one with clips will make it easier. Here is a random one that should work on Amazon: https://www.amazon.com/Soldering-Iron-Station-Kit-Temperature/dp/B09T3BTDWZ
 - Heat Gun - Any heat gun should do, here is one that should work: https://www.amazon.com/SEEKONE-Handheld-Reflector-Embossing-Stripping/dp/B08VFY8THD
 - Small phillips head screwdriver
 - Computer to program it
 
-**Parts**
+### Parts
+
 Working with parts like these, note that they will fail much more often than you would expect of normal consumer products. If you have the budget, I'd recommend getting extras of every part.
 
 - Arduino Uno R3 -	https://www.amazon.com/dp/B008GRTSV6
@@ -43,19 +45,19 @@ Working with parts like these, note that they will fail much more often than you
 ## Instructions
 For instructions on assembly, look here: https://www.youtube.com/watch?v=1PfsVjnPAuQ&t=1456s
 
-**Prepare Central Board**
+### Prepare Central Board
 1. Take your Arduino Uno and attach the Motor Shield to the top of the Arduino. Line up the motor shield to the end of the board.
 2. Put your Arduino and Motor Shield into a case.
 3. Remove the jumper from the Motor Shield.
 3. Connect USB power source to Motor Shield.
 4. Connect USB power source to Arduino.
 
-**Prepare Vibrating Motors**
+### Prepare Vibrating Motors
 5. Cut 16 wires total to length. 8 black wires and 8 red wires.
 6. Strip the ends of the wires.
 7. Solder the wires to the vibrating motors. Match the red wire from the motor to the red wire, and match the black wire from the motor to the black wire.
 
-**Cover Vibrating Motors With Protective Covers**
+### Cover Vibrating Motors With Protective Covers
 8. Take 4 1/8 heat shrink tubes and cut them in half, so you have 8.
 9. Take 4 1/4 heat shrink tubes and cut them in half, so you have 8.
 10. Take 4 3/8 heat shrink tubes and cut them in half, so you have 8.
@@ -66,17 +68,17 @@ For instructions on assembly, look here: https://www.youtube.com/watch?v=1PfsVjn
 15. Use the head gun on this.
 16. Repeat for all fingers.
 
-**Install Arduino Software**
+### Install Arduino Software
 17. Install Arduino IDE
 18. Plug in Arduino
 19. Install Adafruit Motor Shield Library
 20. Upload the sketch
 
-**Attach Vibrating Motors to Arduino Motor Shield**
+### Attach Vibrating Motors to Arduino Motor Shield
 21. Attach 2 motors into each "slot" in the Arduino Motor Shield. This is because "Motor 1" slot in the motor shield is sending a pattern for "finger 1 on each hand". So 2 blacks and 2 reds in motor 1 and 2 blacks and 2 reds in motor 2, and same for motor 3 and motor 4.
 22. Tighten the motor shield screws to ensure the motors are held firmly in place.
 
-**Assemble Lapboard**
+### Assemble Lapboard
 23. Place laboard on table, and put wrist guard on end.
 24. Have the user place their fingers on the board, and mark each spot.
 25. Label the fingers as 1, 2, 3, 4, with 1 being the index finger and 4 being the pinky finger.
@@ -85,12 +87,12 @@ For instructions on assembly, look here: https://www.youtube.com/watch?v=1PfsVjn
 28. Put the correct vibrating motor to each number. For example, the 2 motors coming from the M1 slot on the Arduino Motor Board go to the 1 finger slot. 
 29. Add cable tie to secure the motor in place.
 
-**Final Power Assembly**
+### Final Power Assembly
 30. Put the motor shield and arduino power cables into a Y-splitter, so they have 1 usb powering both.
 31. Put that usb power into a switch.
 32. Plug the switch into your battery pack.
 
-**Turn It On and Check It**
+### Turn It On and Check It
 33. Turn it on, and check to see if the light inside is flashing.
 34. It should work in a pattern, with each finger vibrating. This video shows how it should work and sound: https://www.youtube.com/shorts/loSCJDZAPkg
 
