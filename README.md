@@ -51,6 +51,8 @@ For instructions on assembly, look here: https://www.youtube.com/watch?v=1PfsVjn
 - Remove the jumper from the Motor Shield.
 - Connect USB power source to Motor Shield.
 - Connect USB power source to Arduino.
+![image](https://user-images.githubusercontent.com/8185194/229240578-8c7c7e98-c4d3-4001-8e2a-2d7cb5a2a556.png)
+
 
 ### Prepare Vibrating Motors
 - Cut 16 wires total to length. 8 black wires and 8 red wires.
@@ -152,6 +154,9 @@ Each
 ### Attach Vibrating Motors to Arduino Motor Shield
 - Attach 2 motors into each "slot" in the Arduino Motor Shield. This is because "Motor 1" slot in the motor shield is sending a pattern for "finger 1 on each hand". So 2 blacks and 2 reds in motor 1 and 2 blacks and 2 reds in motor 2, and same for motor 3 and motor 4.
 - Tighten the motor shield screws to ensure the motors are held firmly in place.
+![image](https://user-images.githubusercontent.com/8185194/229240670-7ebd92fa-1f53-438e-b924-d6d152be92e4.png)
+![image](https://user-images.githubusercontent.com/8185194/229240696-64d1cc71-85aa-4391-86ac-bb09ea989621.png)
+
 
 ### Fanny Pack
 - Add the central controller (Arduino) to the top-center of the board.
@@ -182,9 +187,13 @@ More instructions coming soon...
 To know if your PD Buzzboard is working correctly, you will need a vibration sensor.
 
 ## Parts List
-Ardiuno Nano - https://www.amazon.com/Arduino-Nano-Every-Single-Board/dp/B07VX7MX27
-Vibration Sensor - https://www.amazon.com/gp/product/B0829SZFBL (this was used successfully) OR https://www.amazon.com/gp/product/B07KS5NV4V/ (ordered but not yet tested)
+- Ardiuno Nano - https://www.amazon.com/Arduino-Nano-Every-Single-Board/dp/B07VX7MX27
+- Vibration Sensor - https://www.amazon.com/gp/product/B0829SZFBL (this was used successfully) OR https://www.amazon.com/gp/product/B07KS5NV4V/ (ordered but not yet tested)
+- Cable to connect Arduino Nano to Vibration Sensor - https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78/ref=pd_bxgy_img_sccl_2/142-9931700-3505438?pd_rd_w=HbXTB&content-id=amzn1.sym.6ab4eb52-6252-4ca2-a1b9-ad120350253c&pf_rd_p=6ab4eb52-6252-4ca2-a1b9-ad120350253c&pf_rd_r=YWE164W196MS21VGYW97&pd_rd_wg=14t4p&pd_rd_r=ab8c649b-56c1-4fdb-a338-421d0a2193e3&pd_rd_i=B01EV70C78&th=1
 
 ## Instructions
 This video gives you the instructions to build it:
 https://www.youtube.com/watch?v=qlr-2mkvalQ
+
+- Assemble the sensor unit. Connect the black sensor wire to the GND (ground) and the red sensor wire to the INPUT and tighten. I have seen many of these not work, so you may have to solder them in.
+- Connect the arduino cable from the sensor to the board.
