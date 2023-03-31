@@ -11,6 +11,7 @@ The PD Buzzboard project has a few variations:
 
 # PD Buzzboard
 This project will typically take a few hours to build the first time, if you have all the parts and supplies
+![IMG_2205](https://user-images.githubusercontent.com/8185194/229241850-693c4389-845f-4d5b-a3c4-0547330350af.jpg)
 
 ## Parts & Equipment
 ### Equipment
@@ -140,7 +141,8 @@ These motors will connect to the wrist station.
 The "wrist station" is basically where the individual motors connect from the ends of the fingers to a central part of the wrist. Then, they will connect with a larger cable to a fanny pack, where the central board is. 
 
 - Strip both ends of a CAT 5 cable. There should be 4 pairs of wires. In mine, there was orange, green, blue, and brown. While you can set up the colors in any order you like, I set it up assuming 1 (orange), 2 (green), 3 (blue), 4(orange), with 1 (orange) being the index finger and 4 (brown) being the pinky finger. 
-
+![image](https://user-images.githubusercontent.com/8185194/229240670-7ebd92fa-1f53-438e-b924-d6d152be92e4.png)
+- Use the same colors to represent the same fingers on both sets of gloves.
 
 
 Each 
@@ -152,9 +154,11 @@ Each
 - Upload the sketch
 
 ### Attach Vibrating Motors to Arduino Motor Shield
-- Attach 2 motors into each "slot" in the Arduino Motor Shield. This is because "Motor 1" slot in the motor shield is sending a pattern for "finger 1 on each hand". So 2 blacks and 2 reds in motor 1 and 2 blacks and 2 reds in motor 2, and same for motor 3 and motor 4.
+- Split your CAT5 cable into 8 separate wires, the 4 colors and the 4 grounds.
+  <img width="611" alt="image" src="https://user-images.githubusercontent.com/8185194/229241356-4b5390a3-4e59-4eab-824f-3efd4ad3e295.png">
+
+- Attach 2 motors into each "slot" in the Arduino Motor Shield. The color corresponding with finger 1 (the index finger) should be in the "Motor 1" slot, and so on. Add the grounds next to the Motor as well.
 - Tighten the motor shield screws to ensure the motors are held firmly in place.
-![image](https://user-images.githubusercontent.com/8185194/229240670-7ebd92fa-1f53-438e-b924-d6d152be92e4.png)
 ![image](https://user-images.githubusercontent.com/8185194/229240696-64d1cc71-85aa-4391-86ac-bb09ea989621.png)
 
 
@@ -194,6 +198,9 @@ To know if your PD Buzzboard is working correctly, you will need a vibration sen
 ## Instructions
 This video gives you the instructions to build it:
 https://www.youtube.com/watch?v=qlr-2mkvalQ
+
+- Assemble the sensor unit. Connect the black sensor wire to the GND (ground) and the red sensor wire to the INPUT and tighten. I have seen many of these not work, so you may have to solder them in.
+<img width="442" alt="image" src="https://user-images.githubusercontent.com/8185194/229240900-59457e6a-2cb4-46f6-b1d5-1c00671c0e4d.png">
 
 - Assemble the sensor unit. Connect the black sensor wire to the GND (ground) and the red sensor wire to the INPUT and tighten. I have seen many of these not work, so you may have to solder them in.
 - Connect the arduino cable from the sensor to the board.
