@@ -101,11 +101,71 @@ For instructions on assembly, look here: https://www.youtube.com/watch?v=1PfsVjn
 # PD Buzzboard Gloves with One Controller
 
 ## Parts List
-Coming soon...
+Buy all the parts for the PD Buzzboard except you will also need the following:
+xxxx <coming soon>
+
 
 ## Instructions
-More instructions coming soon...
+Many of these instructions are similar to the PD Buzz Board itself, but the main difference is that you will be putting the main control board in a central fanny pack, and the user will have the vibrating motors in gloves on their hands. This is more comfortable for them. 
 
+Here is a video of some parts of this build: https://www.youtube.com/watch?v=dvRL9_7ok0E
+
+### Prepare Central Board
+- Take your Arduino Uno and attach the Motor Shield to the top of the Arduino. Line up the motor shield to the end of the board.
+- Put your Arduino and Motor Shield into a case.
+- Remove the jumper from the Motor Shield.
+- Connect USB power source to Motor Shield.
+- Connect USB power source to Arduino.
+
+### Prepare Vibrating Motors
+These motors will connect to the wrist station.
+- Cut 16 wires total to length. 8 black wires and 8 red wires.
+- Strip the ends of the wires.
+- Solder the wires to the vibrating motors. Match the red wire from the motor to the red wire, and match the black wire from the motor to the black wire.
+
+### Cover Vibrating Motors With Protective Covers
+- Take 4 1/8 heat shrink tubes and cut them in half, so you have 8.
+- Take 4 1/4 heat shrink tubes and cut them in half, so you have 8.
+- Take 4 3/8 heat shrink tubes and cut them in half, so you have 8.
+- Insert a 1/8 heat shink tubing over the black wire, push all the way to the end.
+- Insert a 1/4" heat shrink tube and push it over the red and black wires, pushing it all the way to the end.
+- Use the heat gun to shrink it.
+- Slide 3/8 heat shrink tube over the 1/4" head shield and the motor.
+- Use the head gun on this.
+- Repeat for all fingers.
+
+### Build wrist station
+The "wrist station" is basically where the individual motors connect from the ends of the fingers to a central part of the wrist. Then, they will connect with a larger cable to a fanny pack, where the central board is. 
+
+- Strip both ends of a CAT 5 cable. There should be 4 pairs of wires. In mine, there was orange, green, blue, and brown. While you can set up the colors in any order you like, I set it up assuming 1 (orange), 2 (green), 3 (blue), 4(orange), with 1 (orange) being the index finger and 4 (brown) being the pinky finger. 
+
+
+
+Each 
+
+### Install Arduino Software
+- Install Arduino IDE
+- Plug in Arduino
+- Install Adafruit Motor Shield Library
+- Upload the sketch
+
+### Attach Vibrating Motors to Arduino Motor Shield
+- Attach 2 motors into each "slot" in the Arduino Motor Shield. This is because "Motor 1" slot in the motor shield is sending a pattern for "finger 1 on each hand". So 2 blacks and 2 reds in motor 1 and 2 blacks and 2 reds in motor 2, and same for motor 3 and motor 4.
+- Tighten the motor shield screws to ensure the motors are held firmly in place.
+
+### Fanny Pack
+- Add the central controller (Arduino) to the top-center of the board.
+- Put the correct vibrating motor to each number. For example, the 2 motors coming from the M1 slot on the Arduino Motor Board go to the 1 finger slot. 
+- Add cable tie to secure the motor in place.
+
+### Final Power Assembly
+- Put the motor shield and arduino power cables into a Y-splitter, so they have 1 usb powering both.
+- Put that usb power into a switch.
+- Plug the switch into your battery pack.
+
+### Turn It On and Check It
+- Turn it on, and check to see if the light inside is flashing.
+- It should work in a pattern, with each finger vibrating. This video shows how it should work and sound: https://www.youtube.com/shorts/loSCJDZAPkg
 For assembly of the gloves themselves, look here: http://www.youtube.com/watch?v=Otokrrb2WSU 
 
 For assembly of the electrical compontents, look here: https://www.youtube.com/watch?v=dvRL9_7ok0E&t=57s
