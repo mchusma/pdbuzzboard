@@ -140,7 +140,7 @@ These motors will connect to the wrist station.
 ### Build wrist station
 The "wrist station" is basically where the individual motors connect from the ends of the fingers to a central part of the wrist. Then, they will connect with a larger cable to a fanny pack, where the central board is. 
 
-- Strip both ends of a CAT 5 cable. There should be 4 pairs of wires. In mine, there was orange, green, blue, and brown. While you can set up the colors in any order you like, I set it up assuming 1 (orange), 2 (green), 3 (blue), 4(orange), with 1 (orange) being the index finger and 4 (brown) being the pinky finger. 
+- Strip both ends of a CAT 5 cable. There should be 4 pairs of wires. In mine, there was orange, green, blue, and brown. While you can set up the colors in any order you like, I set it up assuming 1 (orange), 2 (green), 3 (blue), 4(brown), with 1 (orange) being the index finger and 4 (brown) being the pinky finger. 
 ![image](https://user-images.githubusercontent.com/8185194/229240670-7ebd92fa-1f53-438e-b924-d6d152be92e4.png)
 - Use the same colors to represent the same fingers on both sets of gloves.
 
