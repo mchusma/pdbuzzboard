@@ -52,7 +52,7 @@ For instructions on assembly, look here: https://www.youtube.com/watch?v=1PfsVjn
 - Remove the jumper from the Motor Shield.
 - Connect USB power source to Motor Shield.
 - Connect USB power source to Arduino.
-![image](https://user-images.githubusercontent.com/8185194/229240578-8c7c7e98-c4d3-4001-8e2a-2d7cb5a2a556.png)
+![image](https://user-images.githubusercontent.com/8185194/229240578-8c7c7e98-c4d3-4001-8e2a-2d7cb5a2a556.png height="400")
 
 
 ### Prepare Vibrating Motors
@@ -141,7 +141,7 @@ These motors will connect to the wrist station.
 The "wrist station" is basically where the individual motors connect from the ends of the fingers to a central part of the wrist. Then, they will connect with a larger cable to a fanny pack, where the central board is. 
 
 - Strip both ends of a CAT 5 cable. There should be 4 pairs of wires. In mine, there was orange, green, blue, and brown. While you can set up the colors in any order you like, I set it up assuming 1 (orange), 2 (green), 3 (blue), 4(brown), with 1 (orange) being the index finger and 4 (brown) being the pinky finger. 
-![image](https://user-images.githubusercontent.com/8185194/229240670-7ebd92fa-1f53-438e-b924-d6d152be92e4.png)
+![image](https://user-images.githubusercontent.com/8185194/229240670-7ebd92fa-1f53-438e-b924-d6d152be92e4.png  height="400")
 - Use the same colors to represent the same fingers on both sets of gloves.
 
 
@@ -155,11 +155,11 @@ Each
 
 ### Attach Vibrating Motors to Arduino Motor Shield
 - Split your CAT5 cable into 8 separate wires, the 4 colors and the 4 grounds.
-  <img width="611" alt="image" src="https://user-images.githubusercontent.com/8185194/229241356-4b5390a3-4e59-4eab-824f-3efd4ad3e295.png">
+  <img  height="400" alt="image" src="https://user-images.githubusercontent.com/8185194/229241356-4b5390a3-4e59-4eab-824f-3efd4ad3e295.png">
 
 - Attach 2 motors into each "slot" in the Arduino Motor Shield. The color corresponding with finger 1 (the index finger) should be in the "Motor 1" slot, and so on. Add the grounds next to the Motor as well.
 - Tighten the motor shield screws to ensure the motors are held firmly in place.
-![image](https://user-images.githubusercontent.com/8185194/229240696-64d1cc71-85aa-4391-86ac-bb09ea989621.png)
+![image](https://user-images.githubusercontent.com/8185194/229240696-64d1cc71-85aa-4391-86ac-bb09ea989621.png  height="400")
 
 
 ### Fanny Pack
