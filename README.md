@@ -2,16 +2,61 @@
 This product is not a medical device and is not intended to diagnose, treat, cure, or prevent any disease or medical condition. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare professional before making any decisions related to your health or using this product in conjunction with a medical treatment plan.
 
 # Introduction
-This is a repository for files associated with the PD Buzzboard.  It is open and free to copy.  Any questions can be sent to pdbuzzboard@gmail.com. I hope this content will bring relief to your PD partner as it has to mine.
+This is a repository for files associated with the PD Buzzboard.  It is open and free to copy, and is designed to allow users to attempt to replicate the results of Dr. Peter Tass's Vibrotactile Therapy studies.  Any questions can be sent to pdbuzzboard@gmail.com. I hope this content will bring relief to your PD partner as it has to mine.
 
-The PD Buzzboard project has a few variations:
+The PD Buzzboard project has a few hardware variations:
 - The "PD Buzzboard" itself, which is a board which sits in your lap, and has vibrating motors on each finger. Users can put this in their lap, place their fingers on the motors, and get vibration on their fingers. This is easiest to build, but users must stay stationary while using.
 - The "PD Buzzboard Gloves with One Controller". This variation has a central controllers running the vibration program, typically used in a fanny pack, and wires running from the fanny pack to the gloves. This is more mobile than the buzzboard, as users can walk and move around, but there are some central cables which can get caught on things.
 - The "PD Buzzboard Gloves with Separate Controllers". This variation has separate controllers on each hand. This is the hardest to build, but has the most mobility.
 
+And it also has a few software variations:
+- 2 regular vCR options
+- 1 noisy vCR option
+
+# Summary of Peter Tass Stanford Study
+The main study we are looking at was done by Dr. Tass, where attempted to use gloves vibrating in a pattern to help the brain move towards more healthy patterns.
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/8185194/229322951-5f7c0976-d015-4cec-bdc5-33f84bb2991d.png">
+
+Here is the study:
+https://www.frontiersin.org/articles/10.3389/fphys.2021.624317/full
+
+At a high level he has attempted 2 different approaches:
+- Regular Vibrotactile Coordinated Reset (vCR): where a semi random pattern is applied
+- Noisy Vibrotactile Coordinated Reset (vCR): where additional random delays are added into the pattern to further increase randomness, and hopefully increasing the effect.
+
+Right now, there is no data on which approach is better. But it appears all 8 Parkinson's patients receiving either approach saw improvements in motor performance and MDS-UPDRS III scores. The theory is that noisy vCR could improve results, but there is just no data to support it yet.
+
+Here is how the paper describs the characteristics listed in the paper of the vibration sequence to use to reproduce the results.
+- Vibration frequency: 250 Hz (1 Hz is equal to 60 rpm, which is why we have purchased 15,000 rpm motors)
+- Vibration duration: 100 ms
+- Stimulation rate: 1.5 Hz (corresponding to a 667 ms cycle)
+- Fingertips stimulated: Fingers 2-5 of both hands (excluding thumbs).
+- For each loop of the sequence, each motor is triggered exactly once.
+- Sequence order: Randomly varied
+- Mirrored: For Noisy vCR,  the stimulation was mirrored in both hands. For regular vCR, it was NOT mirrored, rather each hand recieved the same sequence at slightly different/independent times.
+- Inter-stimulus intervals: Constant for regular vCR, or subject to moderate jitter (± 23.5%) for noisy vCR
+- Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm)
+- On-Off Pattern of 3:2. Meaning 3 seconds of the stimulation in the above pattern, with 2 seconds of break.
+
+And here is how the paper describes the gloves:
+- The hand array comprised of 8 vibrating motors from Engineering Acoustics called "C-MF tactors". I cannot find these online, but I see the similar C2 available: https://www.eaiinfo.com/product/c2/. Each tactor was located against the fingertip of the second (index), third, fourth and fifth (pinky) finger using individual finger pods that are attached to a glove. The pod consisted of the motor, and essentially a velcro/fabric pod to hold it together.
+
+Here is the glove:
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/8185194/229360832-e3298252-14cb-4c3a-94c5-b17ab2709d9f.png">
+
+
+And here is the housing for the motor:
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/8185194/229360503-79c0f971-dd0b-40a3-8fe7-4c15a7fab7c9.png">
+
+
+4. Sequence order: Randomly varied
 # PD Buzzboard
 This project will typically take a few hours to build the first time, if you have all the parts and supplies
-![IMG_2205](https://user-images.githubusercontent.com/8185194/229241850-693c4389-845f-4d5b-a3c4-0547330350af.jpg)
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/8185194/229241850-693c4389-845f-4d5b-a3c4-0547330350af.jpg">
 
 ## Parts & Equipment
 ### Equipment
@@ -29,7 +74,7 @@ Working with parts like these, note that they will fail much more often than you
 - Arduino Uno R3 -	https://www.amazon.com/dp/B008GRTSV6
 - USB A-B cable - https://www.amazon.com/AmazonBasics-USB-Printer-Cable-Male/dp/B00NH13DV2
 - HiLetgomotorshield – 4 motor	https://www.amazon.com/dp/B01DG61YRM?psc=1&ref=ppx_yo2ov_dt_b_product_details
-- Vibrating Motors. We recommend the ones following the Stanford spec: 15,000 rpm -   (meet Stanford spec)	https://www.digikey.com/en/products/detail/vybronics-inc/VW0625AB001G/9974285 but you can use these as an alternative, although their rpm are 12,000 instead of 15,000.	https://www.amazon.com/dp/B0989GN2XY
+- Vibrating Motors. We recommend the ones following the Stanford spec: 15,000 rpm -   (meet Stanford spec)	https://www.digikey.com/en/products/detail/vybronics-inc/VW0625AB001G/9974285 but you can use these as an alternative, although their rpm are 12,000 instead of 15,000.	https://www.amazon.com/dp/B0989GN2XY - The Stanford study uses C-MF from this company, which I cannot find online but they do have the similar C2 model: https://www.eaiinfo.com/product/c2/
 - Arduino case	https://www.amazon.com/dp/B00UBT87XM OR https://www.amazon.com/gp/product/B0BSLR5LHB (this second one can contain both the motor shield and the Arduino together)
 - 1/8”, ¼”, 3/8” heat shrink tubing	https://www.amazon.com/dp/B084GDLSCK
 - 22GA wire red and black 	https://www.amazon.com/dp/B07JNRJW37
@@ -208,39 +253,4 @@ https://www.youtube.com/watch?v=qlr-2mkvalQ
 - Assemble the sensor unit. Connect the black sensor wire to the GND (ground) and the red sensor wire to the INPUT and tighten. I have seen many of these not work, so you may have to solder them in.
 - Connect the arduino cable from the sensor to the board.
 
-# The Stanford Study
-The "Stanford Study" done by Dr. Tass attempted to use gloves vibrating in a pattern to help the brain move towards more healthy patterns.
-<img width="1082" alt="image" src="https://user-images.githubusercontent.com/8185194/229322951-5f7c0976-d015-4cec-bdc5-33f84bb2991d.png">
 
-Here is the Study:
-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010568
-This article seems to go in some detail:
-https://www.frontiersin.org/articles/10.3389/fphys.2021.624317/full
-
-Here is what the study appears to suggest:
-Based on this study, the specific optimal sequence of vibrations for best results in patients with Parkinson's Disease is as follows:
-- Vibration frequency: 250 Hz
-- Vibration duration: 100 ms
-- Stimulation rate: 1.5 Hz (corresponding to a 667 ms cycle)
-- Fingertips stimulated: Fingers 2-5 of both hands (excluding thumbs), with mirrored stimulation in both hands
-- Sequence order: Randomly varied
-- Inter-stimulus intervals: Constant for regular vCR, or subject to moderate jitter (± 23.5%) for noisy vCR
-- Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm)
-- On-Off Pattern of 3:2. Meaning 3 seconds of the stimulation in the above pattern, with 2 seconds of break.
-
-These parameters were found to be effective in the feasibility studies with regular and noisy vCR, improving motor performance and reducing MDS-UPDRS III scores in patients with idiopathic Parkinson's Disease. The vibration amplitude was set to a weaker level to avoid distraction and discomfort while allowing patients to engage in daily activities.
-
-Noisy vs Regular vCR
-The information provided does not allow for a direct comparison between regular and noisy vCR in terms of average effectiveness, as the studies used different patient groups and study durations. However, both regular and noisy vCR have shown to be well-tolerated and capable of causing sustained cumulative improvement of motor performance as assessed by off medication MDS-UPDRS III scores.
-
-It is worth noting that the noisy vCR was designed with moderate jitter in inter-stimulus intervals, based on the hypothesis that this could improve long-lasting desynchronization and potentially result in better long-term clinical outcomes. To determine which type of vCR is more effective on average, a study directly comparing regular and noisy vCR in a larger, controlled patient population would be necessary.
-
-## Recreating The Study
-To recreate the sequence from the study, it appears we need to create a program that vibrates a set of motors 1-4 with the following sequence and characteristics:
-1. Vibration frequency: 250 Hz (1 Hz is equal to 60 rpm, which is why we have purchased 15,000 rpm motors)
-2. Vibration duration: 100 ms, although some people have said that it says 100ms but in visual graphs is shows as 167 ms.
-3. Stimulation rate: 1.5 Hz (corresponding to a 667 ms cycle)
-4. Sequence order: Randomly varied
-5. Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm)
-6. For each loop of the sequence, each motor is triggered exactly once.
-7. The option to add a moderate jitter (± 23.5%)
