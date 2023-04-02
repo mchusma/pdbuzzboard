@@ -66,6 +66,7 @@ And it also has a few software variations, including:
 
 There are other project options listed here:
 https://bb.f2heal.com/viewforum.php?f=13
+https://github.com/HackyDev/vibrotactile-stimulator
 
 # PD Buzzboard
 This project will typically take a few hours to build the first time, if you have all the parts and supplies
@@ -228,7 +229,13 @@ Each
 - Add the central controller (Arduino) to the top-center of the board.
 - Put the correct vibrating motor to each number. For example, the 2 motors coming from the M1 slot on the Arduino Motor Board go to the 1 finger slot. 
 - Add cable tie to secure the motor in place.
-
+  
+### Glove Assembly
+- 3D Print Finger Housings: I used the attached 3D print files attached to this github, or here: https://www.crealitycloud.com/model-detail/6429fdb4c37c438c95ae78d5, and printed them on the cloud using Craftcloud. I am working on an easier way to print the finger housings.
+- Put the motor into the housing.
+MORE DETAILS TO COME
+  
+  
 ### Final Power Assembly
 - Put the motor shield and arduino power cables into a Y-splitter, so they have 1 usb powering both.
 - Put that usb power into a switch.
