@@ -234,8 +234,8 @@ It is worth noting that the noisy vCR was designed with moderate jitter in inter
 
 ## Recreating The Study
 To recreate the sequence from the study, it appears we need to create a program that vibrates a set of motors 1-4 with the following sequence and characteristics:
-1. Vibration frequency: 250 Hz
-2. Vibration duration: 100 ms
+1. Vibration frequency: 250 Hz (1 Hz is equal to 60 rpm, which is why we have purchased 15,000 rpm motors)
+2. Vibration duration: 100 ms, although some people have said that it says 100ms but in visual graphs is shows as 167 ms.
 3. Stimulation rate: 1.5 Hz (corresponding to a 667 ms cycle)
 4. Sequence order: Randomly varied
 5. Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm)
