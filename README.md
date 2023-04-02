@@ -21,6 +21,8 @@ The main study we are looking at was done by Dr. Tass, where attempted to use gl
 Here is the study:
 https://www.frontiersin.org/articles/10.3389/fphys.2021.624317/full
 
+## The Stimulation Pattern
+
 At a high level he has attempted 2 different approaches:
 - Regular Vibrotactile Coordinated Reset (vCR): where a semi random pattern is applied
 - Noisy Vibrotactile Coordinated Reset (vCR): where additional random delays are added into the pattern to further increase randomness, and hopefully increasing the effect.
@@ -28,16 +30,29 @@ At a high level he has attempted 2 different approaches:
 Right now, there is no data on which approach is better. But it appears all 8 Parkinson's patients receiving either approach saw improvements in motor performance and MDS-UPDRS III scores. The theory is that noisy vCR could improve results, but there is just no data to support it yet.
 
 Here is how the paper describs the characteristics listed in the paper of the vibration sequence to use to reproduce the results.
-- Vibration frequency: 250 Hz (1 Hz is equal to 60 rpm, which is why we have purchased 15,000 rpm motors)
-- Vibration duration: 100 ms
+- Vibration frequency: 250 Hz (1 Hz is equal to 60 rpm, which is why we have purchased 15,000 rpm motors). 
+- Vibration duration: 100 ms. Some people have observed that some charts seem to have 167ms duration, but the papers do clearly state 100ms duration.
 - Stimulation rate: 1.5 Hz (corresponding to a 667 ms cycle)
 - Fingertips stimulated: Fingers 2-5 of both hands (excluding thumbs).
 - For each loop of the sequence, each motor is triggered exactly once.
 - Sequence order: Randomly varied
 - Mirrored: For Noisy vCR,  the stimulation was mirrored in both hands. For regular vCR, it was NOT mirrored, rather each hand recieved the same sequence at slightly different/independent times.
 - Inter-stimulus intervals: Constant for regular vCR, or subject to moderate jitter (± 23.5%) for noisy vCR
-- Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm)
+- Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm). This seems important, as the paper states:
+> The first-in-human study using 0.35-mm vibration amplitude found no significant differences in the UPDRS III during the 3-day treatment phase ...Nevertheless, our finding of strong acute decreases in the MDS-UPDRS III observed during study 1’s first visit and in study 2 in patient 1’s first 3-day visit, and patient 3’s first day visit may indicate that smaller peak vibration amplitudes (0.1 mm/0.06 mm) are more beneficial toward treating patients’ motor symptoms.
 - On-Off Pattern of 3:2. Meaning 3 seconds of the stimulation in the above pattern, with 2 seconds of break.
+
+The paper shows a diagram of the stimulation pattern:
+![image](https://user-images.githubusercontent.com/8185194/229382917-f28eccdb-a795-4135-a591-fa3789d2e040.png)
+
+And describes it:
+> Stimulation patterns used throughout the paper. (A) Regular 3:2 ON-OFF coordinated reset with rapidly varying sequence (CR RVS) pattern. (B) Noisy 3:2 ON-OFF CR RVS pattern and 23.5% jitter. (C) Purely periodic multichannel stimulation. Gray lines indicate multiples of the vibrotactile coordinated reset (vCR) period TCR, and dotted lines indicate multiples of TCR/4 during individual CR periods.
+
+https://www.frontiersin.org/articles/10.3389/fphys.2021.624317/full
+
+**So it is unclear if the Stanford study uses the pattern shown, or if this is just a sample pattern and it is randomly generated. We are running anecdotal tests now.**
+
+## Gloves
 
 And here is how the paper describes the gloves:
 - The hand array comprised of 8 vibrating motors from Engineering Acoustics called "C-MF tactors". I cannot find these online, but I see the similar C2 available: https://www.eaiinfo.com/product/c2/. Each tactor was located against the fingertip of the second (index), third, fourth and fifth (pinky) finger using individual finger pods that are attached to a glove. The pod consisted of the motor, and essentially a velcro/fabric pod to hold it together.
@@ -231,7 +246,7 @@ Each
 - Add cable tie to secure the motor in place.
   
 ### Glove Assembly
-- 3D Print Finger Housings: I used the attached 3D print files attached to this github, or here: https://www.crealitycloud.com/model-detail/6429fdb4c37c438c95ae78d5, and printed them on the cloud using Craftcloud. I am working on an easier way to print the finger housings.
+- 3D Print Finger Housings: I used the attached 3D print files found here: https://www.crealitycloud.com/model-detail/6429fdb4c37c438c95ae78d5 or here: https://www.thingiverse.com/thing:5947463. I uploaded them to a cloud 3D printing service. I used: https://craftcloud3d.com/. I am working on an easier way to print the finger housings.
 - Put the motor into the housing.
 MORE DETAILS TO COME
   
