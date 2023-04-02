@@ -2,16 +2,16 @@
 This product is not a medical device and is not intended to diagnose, treat, cure, or prevent any disease or medical condition. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare professional before making any decisions related to your health or using this product in conjunction with a medical treatment plan.
 
 # Introduction
-This is a repository for files associated with the PD Buzzboard.  It is open and free to copy, and is designed to allow users to attempt to replicate the results of Dr. Peter Tass's Vibrotactile Therapy studies.  Any questions can be sent to pdbuzzboard@gmail.com. I hope this content will bring relief to your PD partner as it has to mine.
+This was originally a fork of the pdbuzzboard project, we love his work! However, as I have added a lot more of my own flavor to this, I'm maintaining a separate repo just in case. I do intend to merge in changes as he will accept, to consilidate notes. My main goal with this repo is to consolidate everything possible to help users recreate the results of Dr. Peter Tass's Vibrotactile Therapy studies. It is open and free to copy, PRs are welcome!
 
-The PD Buzzboard project has a few hardware variations:
-- The "PD Buzzboard" itself, which is a board which sits in your lap, and has vibrating motors on each finger. Users can put this in their lap, place their fingers on the motors, and get vibration on their fingers. This is easiest to build, but users must stay stationary while using.
-- The "PD Buzzboard Gloves with One Controller". This variation has a central controllers running the vibration program, typically used in a fanny pack, and wires running from the fanny pack to the gloves. This is more mobile than the buzzboard, as users can walk and move around, but there are some central cables which can get caught on things.
-- The "PD Buzzboard Gloves with Separate Controllers". This variation has separate controllers on each hand. This is the hardest to build, but has the most mobility.
-
-And it also has a few software variations:
-- 2 regular vCR options
-- 1 noisy vCR option
+At a high level, I will include:
+- [Recreating Dr. Tass's Stanford Study](#summary-of-peter-tass-stanford-study)
+- [Different Hardware and Software Options](#different-hardware-and-software-options)
+- [PD Buzzboard](#pd-buzzboard)
+- [PD Buzzboard Gloves with One Controller](#pd-buzzboard-gloves-with-one-controller)
+- [PD Buzzboard Gloves with Separate Controllers](#pd-buzzboard-gloves-with-separate-controllers)
+- [Vibration Sensor](#vibration-sensor)
+- [Troubleshooting](#troubleshooting)
 
 # Summary of Peter Tass Stanford Study
 The main study we are looking at was done by Dr. Tass, where attempted to use gloves vibrating in a pattern to help the brain move towards more healthy patterns.
@@ -52,7 +52,21 @@ And here is the housing for the motor:
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/8185194/229360503-79c0f971-dd0b-40a3-8fe7-4c15a7fab7c9.png">
 
 
-4. Sequence order: Randomly varied
+# Different Hardware and Software Options
+I'm aware of several different hardware and software options that are going on. Some of which I have implemented myself:
+
+The PDBuzzboard Project has several hardware and software variations.
+- The "PD Buzzboard" itself, which is a board which sits in your lap, and has vibrating motors on each finger. Users can put this in their lap, place their fingers on the motors, and get vibration on their fingers. This is easiest to build, but users must stay stationary while using.
+- The "PD Buzzboard Gloves with One Controller". This variation has a central controllers running the vibration program, typically used in a fanny pack, and wires running from the fanny pack to the gloves. This is more mobile than the buzzboard, as users can walk and move around, but there are some central cables which can get caught on things.
+- The "PD Buzzboard Gloves with Separate Controllers". This variation has separate controllers on each hand. This is the hardest to build, but has the most mobility.
+
+And it also has a few software variations, including:
+- 2 attempts to replicate regular vCR results
+- 1 attempt to replicate noisy vCR options
+
+There are other project options listed here:
+https://bb.f2heal.com/viewforum.php?f=13
+
 # PD Buzzboard
 This project will typically take a few hours to build the first time, if you have all the parts and supplies
 
@@ -253,4 +267,4 @@ https://www.youtube.com/watch?v=qlr-2mkvalQ
 - Assemble the sensor unit. Connect the black sensor wire to the GND (ground) and the red sensor wire to the INPUT and tighten. I have seen many of these not work, so you may have to solder them in.
 - Connect the arduino cable from the sensor to the board.
 
-
+# Troubleshooting
