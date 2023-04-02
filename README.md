@@ -214,6 +214,8 @@ The "Stanford Study" done by Dr. Tass attempted to use gloves vibrating in a pat
 
 Here is the Study:
 https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010568
+This article seems to go in some detail:
+https://www.frontiersin.org/articles/10.3389/fphys.2021.624317/full
 
 Here is what the study appears to suggest:
 Based on this study, the specific optimal sequence of vibrations for best results in patients with Parkinson's Disease is as follows:
@@ -224,6 +226,7 @@ Based on this study, the specific optimal sequence of vibrations for best result
 - Sequence order: Randomly varied
 - Inter-stimulus intervals: Constant for regular vCR, or subject to moderate jitter (± 23.5%) for noisy vCR
 - Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm)
+- On-Off Pattern of 3:2. Meaning 3 seconds of the stimulation in the above pattern, with 2 seconds of break.
 
 These parameters were found to be effective in the feasibility studies with regular and noisy vCR, improving motor performance and reducing MDS-UPDRS III scores in patients with idiopathic Parkinson's Disease. The vibration amplitude was set to a weaker level to avoid distraction and discomfort while allowing patients to engage in daily activities.
 
