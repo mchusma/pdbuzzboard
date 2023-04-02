@@ -207,3 +207,37 @@ https://www.youtube.com/watch?v=qlr-2mkvalQ
 
 - Assemble the sensor unit. Connect the black sensor wire to the GND (ground) and the red sensor wire to the INPUT and tighten. I have seen many of these not work, so you may have to solder them in.
 - Connect the arduino cable from the sensor to the board.
+
+# The Stanford Study
+The "Stanford Study" done by Dr. Tass attempted to use gloves vibrating in a pattern to help the brain move towards more healthy patterns.
+<img width="1082" alt="image" src="https://user-images.githubusercontent.com/8185194/229322951-5f7c0976-d015-4cec-bdc5-33f84bb2991d.png">
+
+Here is the Study:
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010568
+
+Here is what the study appears to suggest:
+Based on this study, the specific optimal sequence of vibrations for best results in patients with Parkinson's Disease is as follows:
+- Vibration frequency: 250 Hz
+- Vibration duration: 100 ms
+- Stimulation rate: 1.5 Hz (corresponding to a 667 ms cycle)
+- Fingertips stimulated: Fingers 2-5 of both hands (excluding thumbs), with mirrored stimulation in both hands
+- Sequence order: Randomly varied
+- Inter-stimulus intervals: Constant for regular vCR, or subject to moderate jitter (± 23.5%) for noisy vCR
+- Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm)
+
+These parameters were found to be effective in the feasibility studies with regular and noisy vCR, improving motor performance and reducing MDS-UPDRS III scores in patients with idiopathic Parkinson's Disease. The vibration amplitude was set to a weaker level to avoid distraction and discomfort while allowing patients to engage in daily activities.
+
+Noisy vs Regular vCR
+The information provided does not allow for a direct comparison between regular and noisy vCR in terms of average effectiveness, as the studies used different patient groups and study durations. However, both regular and noisy vCR have shown to be well-tolerated and capable of causing sustained cumulative improvement of motor performance as assessed by off medication MDS-UPDRS III scores.
+
+It is worth noting that the noisy vCR was designed with moderate jitter in inter-stimulus intervals, based on the hypothesis that this could improve long-lasting desynchronization and potentially result in better long-term clinical outcomes. To determine which type of vCR is more effective on average, a study directly comparing regular and noisy vCR in a larger, controlled patient population would be necessary.
+
+## Recreating The Study
+To recreate the sequence from the study, it appears we need to create a program that vibrates a set of motors 1-4 with the following sequence and characteristics:
+1. Vibration frequency: 250 Hz
+2. Vibration duration: 100 ms
+3. Stimulation rate: 1.5 Hz (corresponding to a 667 ms cycle)
+4. Sequence order: Randomly varied
+5. Vibration amplitude: Perceptually weak vibration peak amplitudes (0.06-0.10 mm)
+6. For each loop of the sequence, each motor is triggered exactly once.
+7. The option to add a moderate jitter (± 23.5%)
