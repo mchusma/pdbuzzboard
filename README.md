@@ -290,3 +290,6 @@ https://www.youtube.com/watch?v=qlr-2mkvalQ
 - Connect the arduino cable from the sensor to the board.
 
 # Troubleshooting
+
+## My motors are not firing in sequence?
+The first thing I would check would be that all things are firmly attached. For example, the motor board easily comes off the Arduino Uno, and must be set fully to work.
