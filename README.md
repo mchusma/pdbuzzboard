@@ -70,15 +70,20 @@ And here is the housing for the motor:
 # Different Hardware and Software Options
 I'm aware of several different hardware and software options that are going on. Some of which I have implemented myself:
 
-The PDBuzzboard Project has several hardware and software variations.
+## PDBuzzBoard Project
+I have spent the most time with this project, and have the most knowledge of it. The PDBuzzboard Project has several hardware variations.
 - The "PD Buzzboard" itself, which is a board which sits in your lap, and has vibrating motors on each finger. Users can put this in their lap, place their fingers on the motors, and get vibration on their fingers. This is easiest to build, but users must stay stationary while using.
 - The "PD Buzzboard Gloves with One Controller". This variation has a central controllers running the vibration program, typically used in a fanny pack, and wires running from the fanny pack to the gloves. This is more mobile than the buzzboard, as users can walk and move around, but there are some central cables which can get caught on things.
 - The "PD Buzzboard Gloves with Separate Controllers". This variation has separate controllers on each hand. This is the hardest to build, but has the most mobility.
 
 And it also has a few software variations, including:
-- 2 attempts to replicate regular vCR results
-- 1 attempt to replicate noisy vCR options
+ - VibroTherapy 3V.ino - it looks like a regular vCR approach originally created by pdbuzzboard
+- VibroTherapyMotorShield.ino - regular vCR attempting to recreate the pattern shown in the paper with 100ms duration vibrations
+- VibroTherapyMotorShield_167.ino - regular vCR attempting to recreate the pattern shown in the paper with 167ms duration vibrations
+- VibroTherapyMotorShield_167_with_jitter.ino - noisy vCR attempting to recreate the pattern shown in the paper with 167ms duration vibrations with 23.5% jitter added to the pattern
+- VibroTherapyMotorShieldv3.ino - This was an attempt to recreate how the paper described the pattern, without recreating the diagram. It has much more randomness than the other projects.
 
+## Other Projects
 There are other project options listed here:
 https://bb.f2heal.com/viewforum.php?f=13
 https://github.com/HackyDev/vibrotactile-stimulator
